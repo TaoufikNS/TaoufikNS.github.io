@@ -2,34 +2,143 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Taoufik NS | Automation Developer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Taoufik NS | Automation & AI Systems</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Soufiane N’sabi</h1>
-    <p>Automation Developer | Excel ↔ HubSpot | Python & AI</p>
+
+  <!-- HERO / TOP SECTION -->
+  <header class="hero">
+    <div class="container hero-inner">
+      <div>
+        <h1 class="name">Taoufik NS</h1>
+        <p class="tagline">
+          Automation & AI Systems Developer<br>
+          Excel ↔ HubSpot Integrations • Python • Process Optimization
+        </p>
+      </div>
+      <div class="contact-box">
+        <a class="contact-link" href="https://www.linkedin.com/YOUR-LINK" target="_blank">LinkedIn</a>
+        <a class="contact-link" href="https://github.com/YOUR-USERNAME" target="_blank">GitHub</a>
+        <a class="contact-link" href="mailto:YOUR-EMAIL@gmail.com">Email</a>
+      </div>
+    </div>
   </header>
 
-  <section>
-    <h2>About Me</h2>
-    <p>I build automation bridges between business tools, eliminating repetitive work and connecting systems like Excel, Google Sheets, and HubSpot.</p>
-  </section>
+  <main class="container main-content">
 
-  <section>
-    <h2>Projects</h2>
-    <ul>
-      <li><strong>Excel–HubSpot Bridge</strong> — Smart sync between Excel sheets and HubSpot using Python APIs.</li>
-    </ul>
-  </section>
+    <!-- ABOUT -->
+    <section class="card">
+      <h2 class="section-title">About</h2>
+      <p class="text-lg">
+        I build automation bridges for businesses. I remove repetitive manual work
+        by connecting tools like Excel, Google Sheets, ERPs, and CRMs (HubSpot, etc.)
+        using Python and AI logic.
+      </p>
+      <p class="text-md">
+        Focus areas: data cleaning, sync between systems, live dashboards, and workflow
+        automation. Goal: save hours of boring work and make teams faster.
+      </p>
+    </section>
 
-  <section>
-    <h2>Connect</h2>
-    <p>
-      <a href="https://www.linkedin.com/in/YOUR-LINK">LinkedIn</a> |
-      <a href="https://github.com/YOUR-USERNAME">GitHub</a> |
-      <a href="mailto:YOUR-EMAIL@gmail.com">Email</a>
-    </p>
-  </section>
+    <!-- PROJECTS -->
+    <section class="card">
+      <h2 class="section-title">Selected Work</h2>
+
+      <div class="project-list">
+
+        <!-- PROJECT 1 -->
+        <article class="project-card">
+          <div class="project-header">
+            <h3 class="project-title">Excel ↔ HubSpot Bridge</h3>
+            <span class="project-tag">Automation / Python API</span>
+          </div>
+          <p class="project-desc">
+            A sync tool that takes lead data from Excel / Google Sheets and pushes it
+            directly into HubSpot without manual copy/paste. Handles mapping, data
+            cleanup, and bulk insert. Built for teams that manage hundreds of leads.
+          </p>
+          <ul class="project-bullets">
+            <li>Auto-detects column names (no fixed template)</li>
+            <li>Fixes totals / missing fields before upload</li>
+            <li>One-click push → HubSpot CRM</li>
+          </ul>
+          <div class="project-links">
+            <a class="project-link" href="https://github.com/YOUR-USERNAME/EXCEL-HUBSPOT-REPO" target="_blank">View Code →</a>
+          </div>
+        </article>
+
+        <!-- PROJECT 2 -->
+        <article class="project-card">
+          <div class="project-header">
+            <h3 class="project-title">Warehouse Intelligence / RWIS</h3>
+            <span class="project-tag">Logistics • 3D Visualization</span>
+          </div>
+          <p class="project-desc">
+            Tool for warehouse layout + slotting optimization. Draw the warehouse,
+            visualize shelves in 3D, assign high-frequency SKUs closer to entry,
+            and generate CSV export of placement logic.
+          </p>
+          <ul class="project-bullets">
+            <li>Automatic product placement by pick frequency</li>
+            <li>3D view of racks, aisles, traffic flow</li>
+            <li>Exports optimized layout to CSV</li>
+          </ul>
+          <div class="project-links">
+            <a class="project-link" href="#" target="_blank">Demo Coming Soon →</a>
+          </div>
+        </article>
+
+        <!-- PROJECT 3 -->
+        <article class="project-card">
+          <div class="project-header">
+            <h3 class="project-title">SheetSync AI</h3>
+            <span class="project-tag">AI Data Cleaning</span>
+          </div>
+          <p class="project-desc">
+            “Smart spreadsheet assistant” that understands messy column names,
+            fixes broken totals, and tells the user what’s wrong in plain language.
+            Goal: make spreadsheets feel like they have an AI analyst built-in.
+          </p>
+          <ul class="project-bullets">
+            <li>Understands any column naming style</li>
+            <li>Explains errors in normal human language</li>
+            <li>Planned: auto-sync with CRMs / ERPs</li>
+          </ul>
+          <div class="project-links">
+            <a class="project-link" href="#" target="_blank">Preview →</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="card">
+      <h2 class="section-title">Work With Me</h2>
+      <p class="text-md">
+        If you want to automate a boring manual process (Excel hell, duplicate typing,
+        manual CRM updates, etc.), I can build you a custom bridge or internal tool.
+      </p>
+
+      <div class="contact-row">
+        <a class="contact-chip" href="mailto:YOUR-EMAIL@gmail.com">Email</a>
+        <a class="contact-chip" href="https://www.linkedin.com/YOUR-LINK" target="_blank">LinkedIn</a>
+        <a class="contact-chip" href="https://github.com/YOUR-USERNAME" target="_blank">GitHub</a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Taoufik NS • Building automation for real businesses.</p>
+    </footer>
+
+  </main>
+
+  <script>
+    // set current year in footer
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
 </body>
 </html>
